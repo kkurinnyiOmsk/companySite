@@ -1,8 +1,42 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.product-item-move:hover{
+  transition-duration: 1s;
+  transform: rotate(180deg);
+}
+.product-item-move {
+  transition-duration: 1s;
+  transition-property: all;
 }
 
-a {
-  color: #00B7FF;
+.span-rotation-background{
+  background-image: url(../images/service-background.png);
+  z-index: 2;
+  position: absolute;
+  width: 100px;
+  height: 113px;
+  transition-duration: 2s;
+  left: 90px;
+}
+
+.span-rotation-background:hover{
+  transform: rotate(180deg);
+  transition-duration: 2s;
+}
+
+.img-rotation{
+  position: absolute;
+  z-index: 3;
+  transition-duration: 1s;
+  top: 35px;
+  left: 120px;
+}
+
+.img-rotation:hover{
+  transition-duration: 1s;
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 3;
+}
+
+.offset{
+  padding-bottom: 140px;
 }
